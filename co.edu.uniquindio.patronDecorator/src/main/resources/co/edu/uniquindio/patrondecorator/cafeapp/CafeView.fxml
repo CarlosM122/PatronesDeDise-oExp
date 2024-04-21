@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="280.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.patrondecorator.cafeapp.ViewController.CafeViewController">
+   <children>
+      <Label layoutX="282.0" layoutY="12.0" text="CAFE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutY="8.0" prefHeight="1.0" prefWidth="600.0" />
+      <Separator layoutX="-2.0" layoutY="30.0" prefHeight="3.0" prefWidth="600.0" />
+      <Label layoutX="14.0" layoutY="51.0" text="Seleccione el cafe:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdbCafeSimple" layoutX="19.0" layoutY="94.0" mnemonicParsing="false" text="Cafe Simple" />
+      <RadioButton fx:id="rdbCafeDoble" layoutX="21.0" layoutY="130.0" mnemonicParsing="false" text="Cafe Doble" />
+      <RadioButton fx:id="rdbLeche" layoutX="25.0" layoutY="211.0" mnemonicParsing="false" text="Leche" />
+      <RadioButton fx:id="rdbCaramelo" layoutX="25.0" layoutY="251.0" mnemonicParsing="false" text="Caramelo" />
+      <Label layoutX="14.0" layoutY="169.0" text="Seleccione los adicionales:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="42.0" text="Informacion:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtInfo" layoutX="335.0" layoutY="46.0" prefHeight="131.0" prefWidth="250.0" />
+      <Button fx:id="btnCrearOrden" layoutX="241.0" layoutY="238.0" mnemonicParsing="false" onAction="#onCrearOrden" text="Crear Orden" />
+   </children>
+</AnchorPane>
